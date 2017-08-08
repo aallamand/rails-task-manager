@@ -1,0 +1,41 @@
+.list-of-task {
+  text-align: center;
+  margin: 20px auto;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.list-of-task tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.list-of-task tr:last-child {
+  border: none;
+}
+
+.list-of-task td {
+  padding: 20px 40px;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+}
+
+.list-of-task a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.list-of-task a:hover {
+  color: rgba(255, 0, 0, 0.4);
+}
+
+.btn-sbmit {
+  text-align: center;
+  padding: 15px 25px;
+}

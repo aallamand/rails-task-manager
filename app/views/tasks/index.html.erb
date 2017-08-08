@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3 text-center">
+    <h1>All my tasks are here</h1>
+    <table class="list-of-task">
+      <tr>
+        <td>Name</td>
+        <td>Description</td>
+        <td>Action</td>
+      </tr>
+      <% @tasks.each do |task| %>
+        <tr>
+          <td> <%= link_to task.name, task_path(task) %> </td>
+          <td> <%= task.description %></td>
+          <td><%= link_to "delete", task_path(task), method: :delete %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="btn-sbmit">
+      <%= link_to "Create", new_task_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

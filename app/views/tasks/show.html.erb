@@ -1,0 +1,6 @@
+<div class="product text-center">
+  <h1>Task Name: <%= @task.name %> </h1>
+  <p>Task Description: <%= @task.description %></p>
+  <%= link_to "Edit", edit_task_path %>
+  <%= link_to "Back", tasks_path %>
+</div>
